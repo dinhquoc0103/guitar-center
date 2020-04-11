@@ -1,0 +1,669 @@
+
+
+*:not(i){
+    font-family: 'Open Sans'!important;
+}
+
+
+/* ======== màn hình trên 992px , dành cho laptop, máy tính ======== */
+/* ======== TOPBAR ======== */
+.topbar .topbar-social a{
+    padding: 0px 10px;
+    color: #111111;
+}
+.topbar .topbar-social a:hover{
+    color: #E65540;
+    padding-bottom: 6px;
+}
+/* .topbar  */
+.topbar-child1{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+/* .topbar  */
+.topbar-child1 .support{
+    font-weight: 600;
+    color: #4C4C4C;
+}
+/* .topbar  */
+.topbar-child1 i{
+    animation: changeColor 2s infinite;
+    -moz-animation: changeColor 2s infinite;
+    -webkit-animation: changeColor 2s infinite;
+    -o-animation: changeColor 8s infinite;
+}
+@keyframes changeColor{
+    0% {color: red;}
+    25% {color: deepskyblue;}
+    50%{color: greenyellow;}
+    100%{color: blueviolet;}
+}
+.phone-number{
+    font-size: 13px;
+}
+.topbar .topbar-child2{
+    padding-right: 40px;
+}
+.topbar .topbar-child2 div{
+    margin-left: 8px;
+}
+.topbar .topbar-child2  i:hover{
+    color: #E65540;
+    padding-bottom: 6px;
+}
+
+
+
+
+
+
+/* ======== WRAP HEADER ========  */
+.wrap_header{
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+/* ======== logo ========= */
+
+.logo img{
+    width: 100px;
+    max-height: none;
+}
+
+.wrap_header .wrap_menu .main_menu li a{
+    text-transform: uppercase;
+}
+
+/* ======== menu ngang ======== */
+
+.main_menu li{
+    padding: 0px;
+}
+.main_menu li:hover{
+    border-bottom: none;
+}
+.main_menu li a{
+    display: block;
+    padding: 15px 10px;
+}
+
+.main_menu li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: #333333;
+    transition: width 1s;
+}
+
+.main_menu>li:hover>a::after{
+    width: 100%;
+}
+
+
+.sub_menu{
+    background-color: #FFFFFF;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3);
+    padding: 0px;
+    width: 200px;
+}
+
+.sub_menu li{
+    position: relative;
+}
+.sub_menu li a{
+    color: #333333;
+    display: inline-block;
+}
+.sub_menu li a i{
+    position: absolute;
+    top: 18px;
+    right: 6px;
+}
+
+.sub_menu li:hover a{
+    color: #333333;
+}
+
+
+.main_menu>li>.sub_menu{
+    top:100%;
+    left: 11px;
+}
+.main_menu .sub_menu>li:hover>a::after{
+    width: 100%;
+}
+
+
+
+
+
+/* ======== Header: khung tìm kiếm, đăng nhập, đăng ký, đã đăng nhập, giỏ hàng và view giỏ hàng ======== */
+.header-icons{
+    position: relative;
+}
+.header-icons .description-search, .search, .already-logged{
+    margin-right: 8px;
+}
+.already-logged, .log-out{
+    display: none;
+    opacity: 1;
+}
+
+
+#search{
+    position: absolute;
+    border: 1px solid #E5E5E5;
+    top: 150%;
+    right: 75px;
+    border-radius: 2px;
+    display: none;
+}
+
+#frame-search{
+    position: relative;
+    background: #ffffff;
+    width: 300px;
+    padding: 8px 10px;
+    color: #333333;
+}
+
+#btn-search{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    right: 0px;
+    cursor: pointer;
+    background: #F5F5F5;
+}
+
+/* .header-icons .header-wrapicon2 .header-dropdown{
+    width: 400px;
+} */
+.header-wrapicon2 .header-icon1,.header-wrapicon2 .header-icons-noti{
+    margin-right: 10px;
+}
+.header-cart-item-img{
+    box-shadow: 0px 0px 4px 2px #e1e1e1;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.header-cart-item-img::after{
+    display: none;
+}
+
+.header-cart-item-name{
+    margin-bottom: 4px;
+}
+.header-cart-item-txt{
+    margin-bottom: 5px;
+}
+
+
+
+/* ======== màn hình từ 992px trở xuống, dành cho mobile, tablet ======== */
+
+
+@media (max-width: 992px){
+    .header-icons-mobile{
+        position: relative;
+        margin-right: 0px;
+    }
+
+    /* ======== Tìm kiếm ======== */
+    #search-mobile{
+        /* position: absolute; */
+        border: 1px solid #E5E5E5;
+        /* top: 150%; */
+        /* right: 75px; */
+        border-radius: 2px;
+        z-index: 18;
+        /* display: none; */
+    }
+    
+    #frame-search-mobile{
+        position: relative;
+        background: #ffffff;
+        width: 100%;
+        height: auto;
+        padding: 8px 10px;
+        color: #333333;
+    }
+    
+    #btn-search-mobile{
+        position: absolute;
+        width: 40px;
+        height: 100%;
+        bottom: 0px;
+        right: 0px;
+        cursor: pointer;
+        background: #F5F5F5;
+    }
+
+    .header-icons-mobile .description-search-mobile{
+        margin-left: 5px;
+    }
+    .header-icons-mobile .header-wrapicon1{
+        display: none;
+    }
+
+    /* .header-icons-mobile .header-wrapicon2 .header-dropdown{
+        width: 400px;
+    } */
+
+
+    /* ======== Đăng ký, đăng nhập ======== */
+
+    .topbar-child2-mobile .login, .topbar-child2-mobile .register{
+        margin-right: 8px;
+    }
+    .main-menu .item-topbar-mobile .topbar-social-mobile a{
+        display: inline-block;
+        padding: 7px 8px;
+    }
+    .main-menu .item-topbar-mobile .topbar-social-mobile a:hover{
+        margin-bottom: 12px;
+    }
+
+
+
+    /* menu mobile  */
+    .item-menu-mobile>.sub-menu>li{
+        position: relative;
+        /* background: #181818; */
+    }
+    /* .item-menu-mobile>.sub-menu>li>a{
+        display: block;
+        background: #181818;
+    } */
+    .item-menu-mobile .sub-menu li{
+        font-size: 14px !important;
+    }
+    .item-menu-mobile .sub-menu  li i{
+        position: absolute;
+        top: 3px !important;
+        right: 20px;
+        font-size: 14px;
+        padding: 10px;
+        color: #181818;
+    }
+
+    .item-menu-mobile .sub-menu  li .sub-menu li{
+        /* padding: 0px; */
+        font-size: 12px !important;
+    }
+}
+/* ======== xử lý nút tới lui của slide ========  */
+.wrap-slick4, .wrap-slick5 {
+    position: relative;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  /* ------------------------------------ */
+  .arrow-slick4, .arrow-slick5 {
+    position: absolute;
+    z-index: 100;
+    top: calc((100% - 70px) / 2);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 39px;
+    color: #cccccc;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .arrow-slick4:hover, .arrow-slick5:hover {
+    color: #666666;
+  }
+
+  .next-slick4, .next-slick5 {
+    right: -30px;
+  }
+
+  .prev-slick4, .prev-slick5 {
+    left: -30px;
+  }
+  @media (max-width: 1280px) {
+    .next-slick4, .next-slick5 {
+      right: 0px;
+    }
+
+    .prev-slick4, .prev-slick5 {
+      left: 0px;
+    }
+  }
+
+  @media (max-width: 1610px) {
+    .rs1-slick4 .next-slick4, .rs1-slick5 .next-slick5 {
+      right: 0px;
+    }
+
+    .rs1-slick4 .prev-slick4, .rs1-slick5 .prev-slick5 {
+      left: 0px;
+    }
+  }
+
+/* ======== SẢN PHẨM MỚI ======== */
+.sec-title{
+    font-weight: 900;
+}
+.block2 .block2-img {
+    margin-top: 15px;
+    box-shadow: 0px 0px 4px 2px #e1e1e1;
+}
+
+
+.block2 .block2-img .img-hover{
+    position: absolute;
+    left: 100%;
+}
+.block2 .block2-img:hover .img-hover{
+    left: 0px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.block2 .block2-txt .block2-price{
+    text-transform: lowercase;
+}
+
+/* ======== lợi ích khi mua hàng tại shop ======== */
+.box-benefits{
+    padding: 16px 15px 15px;
+}
+
+
+
+/* ======== FOOTER ========  */
+/* -------- footer -------- */
+
+.footer p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #222222 !important;
+}
+
+.footer p span{
+    font-size: 13px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.text-cap{
+    text-transform: capitalize;
+}
+
+footer h4{
+    color: #222222 !important;
+    font-weight: bold;
+}
+
+#fb-root {
+    display: none;
+}
+
+/* ---- responsive plugin của facebook ----   */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+    overflow-x: auto;
+}
+
+div.fb-like-box,
+div.fb-like-box > span,
+div.fb-like-box > span > iframe[style],
+div.fb-comments,
+div.fb-comments > span,
+div.fb-comments > span > iframe[style] {
+  width: 100% !important;
+  overflow-x: auto;
+}
+/* -------- .copyright (bản quyền) -------- */
+.copyright .guitar-center{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.copyright .guitar-center:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* ======== PRODUCT DETAIL ======== */
+/* -------- thông tin: tên đàn, giá, tags, rating, số lượng mua , button thêm vào giỏ hàng  -------- */
+.type{
+    margin-bottom: 10px;
+}
+
+.product-detail-name{
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    color: #222222;
+}
+
+.price-product{
+    margin-bottom: 8px;
+}
+
+.price-product .price-new{
+    color: #E65540;
+}
+.price-product .price-old{
+    color: #222222;
+}
+
+.status{
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+.note{
+    margin-top: 8px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* -------- mô tả và thông số kỹ thuật -------- */
+h5.title{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h4.title{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+h3.title{
+    font-size: 15px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+}
+.description{
+    margin-bottom: 10px;
+}
+.video-description{
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#technical-info {
+	font-size: 15px;
+	color: #555555;
+    line-height: 1.5;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+#technical-info tr th{
+    width: 30%;
+}
+#technical-info tr td{
+    width: 70%;
+}
+
+#technical-info th, td{
+    padding: 10px;
+}
+
+
+
+
+/* -------- reviews về rating và comment -------- */
+
+.box-1-dropdown{
+    margin-bottom: 30px;
+}
+.box-show-comment-reviews{
+    margin-bottom: 15px;
+}
+.box-show-user-reviews{
+    display: flex;
+    margin-top: 10px;
+}
+.box-show-user-reviews .box{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.box-show-user-reviews .user{
+    margin-right: 10px;
+}
+
+.box-show-comment-reviews .content-comment{
+    margin-left: 30px;
+}
+
+
+.star-rating{
+    margin-bottom: 10px;
+}
+.star-rating i, .content-reviews i , .show-star-rating i{
+    cursor: pointer;
+    color:#E3E3E3 ;
+}
+
+.active-rating{
+    color: #FFC120 !important ;
+}
+
+.hover-active-rating{
+    color: #FFC120 !important  ;
+}
+
+
+
+#frame-comment{
+    background: #F4F4F4;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+}
+
+
+
+/* ======== trang giỏ hàng ======== */
+.cart-img-product{
+    box-shadow: 0px 0px 4px 2px #e1e1e1;
+}
+
+.table-shopping-cart .column-1{
+    width: 200px;
+}
+.table-shopping-cart .column-1 .cart-img-product{
+    margin-left: 54px;
+    text-align: center;
+}
+.table-shopping-cart .column-1,
+.table-shopping-cart .column-2, 
+.table-shopping-cart .column-3, 
+.table-shopping-cart .column-4,
+.table-shopping-cart .column-5{
+    padding-left: 0px;
+    text-align: center;
+}
+
+.table-shopping-cart .column-4{
+    width: 140px;
+}
+
+/* .table-shopping-cart .column-6 .remove-item{
+    padding-left: 34px;
+} */
+
+.cart-img-product::after{
+    display: none;
+}
+
+
+.total-price{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.column-3, .column-5, .total-price span{
+    font-weight: bold;
+}
+
+
+
+
+
+/* ======== ĐĂNG KÝ TÀI KHOẢN, ĐĂNG NHẬP ======== */
+.register-page .container .row, .login-page .container .row{
+    justify-content: center;
+}
+
+
+.form-register h4, .form-login h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.already-account, .no-account{
+    line-height: 42px;
+}
+.already-account span, .no-account span {
+    margin-right: 0.2em;
+    font-size: 14px;
+}
+.already-account a, .already-account a{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
