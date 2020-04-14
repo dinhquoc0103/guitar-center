@@ -4,7 +4,6 @@
     font-family: 'Open Sans'!important;
 }
 
-
 /* ======== màn hình trên 992px , dành cho laptop, máy tính ======== */
 /* ======== TOPBAR ======== */
 .topbar .topbar-social a{
@@ -622,11 +621,6 @@ h3.title{
 .column-3, .column-5, .total-price span{
     font-weight: bold;
 }
-
-
-
-
-
 /* ======== ĐĂNG KÝ TÀI KHOẢN, ĐĂNG NHẬP ======== */
 .register-page .container .row, .login-page .container .row{
     justify-content: center;
@@ -656,6 +650,11 @@ h3.title{
     font-weight: bold;
     margin-right: 10px;
 }
+
+
+
+
+
 
 
 
