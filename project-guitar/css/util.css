@@ -3578,7 +3578,10 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 	max-width: 1070px;
 	height: 100%;
 }
-
+.size25 {
+	width: 75%;
+	height: 50px;
+}
 /*[ Width Size ]
 ///////////////////////////////////////////////////////////
 */
@@ -3829,6 +3832,13 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 
 .bo15 {
 	border-bottom: 3px solid #111111;
+}
+
+.bo16 {
+	border-top: 1px dashed #d9d9d9;
+}
+.bo17 {
+	border-bottom: 1px dashed #d9d9d9;
 }
 
 /*[  ]

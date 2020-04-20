@@ -42,7 +42,36 @@ $(document).ready(function () {
         }
     });
 
+    // slideToggle phần viết bình luận, đánh giá 
+    $(".block-top-2").slideUp();
+    $(".btn-active-send-review").click(function(){
+        $(".block-top-2").slideToggle(1000);
+        if($(this).text()=="Gữi đánh giá của bạn"){
+            $(this).text('Đóng lại');
+        }else{
+            $(this).text('Gữi đánh giá của bạn');
+        }
+    });
+    // Text btn active send review theo màn hình
+    $(window).resize(function(){
+        var checkWidth = $(window).width();
+        var textBtn;
+        if(checkWidth > 1024){
+            textBtn = $(".block-top-1 .btn-active-send-review").text();
+        }
+        $(".block-top-1-2 .btn-active-send-review").text(textBtn);
+    });
+    $(window).resize(function(){
+        var checkWidth = $(window).width();
+        var textBtn;
+        if(checkWidth <= 1024){
+            textBtn = $(".block-top-1-2 .btn-active-send-review").text();
+        }
+        $(".block-top-1 .btn-active-send-review").text(textBtn);
+    });
+    
 
+    
 
 });
 
