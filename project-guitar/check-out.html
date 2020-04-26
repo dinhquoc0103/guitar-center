@@ -4,34 +4,29 @@
 	<title>Thanh toán - GuitarCenter</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
+	<!-- Thêm icon trên title ở tab trình duyệt -->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
+	<!-- fontawesome 4.7 -->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
-<!--===============================================================================================-->
+	<!-- Tạo hiệu ứng khi phần tử vừa xuất hiện dùng cho nội dung trên slider ngang full chiều dài màn hình -->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
+	<!-- Tạo button menu ba gạch-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
+	<!-- Hiệu ứng khi load, refesh trang  -->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
+	<!-- Tạo hộp thoại select box đẹp hơn-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
+	<!-- slick tạo slider -->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
-<!--===============================================================================================-->
+	<!-- các file css -->
+	<!-- file css định nghĩa sẵn class -->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" href="css/additional-style.css">
-<!-- add font chữ 'Open Sans'  -->
+	<link rel="stylesheet" type="text/css" href="css/additional-style.css">
+	<!-- add font chữ 'Open Sans'  -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 </head>
 <body class="animsition">
@@ -715,7 +710,7 @@
 						<!-- Total -->
 						<div class="bo9  p-l-40 p-r-40 p-t-30 p-b-38 m-t-30 m-r-0  p-lr-15-sm">
 							<!-- title  -->
-							<h5 class="title m-text20 p-b-24">
+							<h5 class="title m-text20 p-b-24" style="color: #e65540;">
 								ĐƠN HÀNG CỦA BẠN
 							</h5>
 
@@ -731,7 +726,7 @@
 										Guitar Taylor ABCDEXYZ x 1
 									</span>
 									<!-- Giá sản phẩm -->
-									<span class="price-product m-text21   w-full-sm">
+									<span class="price-products m-text21   ">
 										28.000.000đ
 									</span>
 								 </li>
@@ -741,7 +736,7 @@
 									   Guitar Taylor ABCDEXYZ x 1
 								   </span>
 								   <!-- Giá sản phẩm -->
-								   <span class="price-product m-text21   w-full-sm">
+								   <span class="price-products m-text21  ">
 									   28.000.000đ
 								   </span>
 								</li>
@@ -797,9 +792,9 @@
 
 						<!-- wp button đặt hàng ngay -->
 						<div class="w-size25">
-							<button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
+							<a href="order-complete.html" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
 								Đặt hàng ngay
-							</button>
+							</a>
 						</div>
 					</form>
 				</div>
@@ -811,146 +806,134 @@
 
 	<!-- Footer -->
 	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
-		<div class="flex-w p-b-90">
+
+		<!-- Footer (chân trang)  -->
+		<div class="footer flex-w p-b-90">
 			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
-				<h4 class="s-text12 p-b-30">
-					GET IN TOUCH
-				</h4>
+
+				<!-- logo shop -->
+				<a href="index.html" class="logo s-text12 p-b-30">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</a>
 
 				<div>
 					<p class="s-text7 w-size27">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+						Địa chỉ:
+						<span class="text-cap"> 23/12 - Khu Phố tây B - phường đông hoà - thị xã dĩ an - tỉnh bình dương</span>
+					</p>
+					<p class="s-text7 w-size27">
+						Điện thoại:
+						<span>0123.456.789</span>
+					</p>
+					<p class="s-text7 w-size27">
+						Email:
+						<span>guitarcenter@gmail.com</span>
 					</p>
 
-					<div class="flex-m p-t-30">
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
+					<!-- <div class="flex-m p-t-30">
+						 <a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
 						<a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
 						<a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
 						<a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
 						<a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
 			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
 				<h4 class="s-text12 p-b-30">
-					Categories
+					GuitarCenter
 				</h4>
 
 				<ul>
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Men
+							Giới thiệu GuitarCenter
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Women
+							Liên hệ / góp ý
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Dresses
+							Điều khoản sử dụng
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Sunglasses
-						</a>
-					</li>
 				</ul>
 			</div>
 
+			<!-- hướng dẫn chung  -->
 			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
 				<h4 class="s-text12 p-b-30">
-					Links
+					Hướng dẫn
 				</h4>
 
 				<ul>
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Search
+							Giao hàng - đổi trả
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							About Us
+							Hướng dẫn mua hàng
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Contact Us
+							Thanh toán và bảo mật
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Returns
+							Chính sách bảo hành
 						</a>
 					</li>
 				</ul>
 			</div>
 
-			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+			
+
+			<!-- đăng ký nhận bản tin  -->
+			<div class="w-size29 p-t-30 p-l-15 p-r-15 respon3">
 				<h4 class="s-text12 p-b-30">
-					Help
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Track Order
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Returns
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Shipping
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
-				<h4 class="s-text12 p-b-30">
-					Newsletter
+					Đăng ký nhận bản tin
 				</h4>
 
 				<form>
 					<div class="effect1 w-size9">
-						<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
+						<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="Email của bạn">
 						<span class="effect1-line"></span>
 					</div>
 
 					<div class="w-size2 p-t-20">
 						<!-- Button -->
 						<button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
-							Subscribe
+							Đăng ký
 						</button>
 					</div>
 
 				</form>
 			</div>
+
+			<!-- fanpage của shop  -->
+			<div class="w-size30 p-t-30 p-l-15 p-r-15 respon3">
+				<div class="fb-page" data-href="https://www.facebook.com/GuitarCenter-102666498062176/"
+				data-tabs="" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GuitarCenter-102666498062176/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GuitarCenter-102666498062176/">GuitarCenter</a></blockquote>
+				</div>
+			</div>
 		</div>
 
-		<div class="t-center p-l-15 p-r-15">
+		<!-- Bản quyền GuitarCenter  -->
+		<div class="copyright t-center p-l-15 p-r-15">
 			<a href="#">
 				<img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
 			</a>
@@ -972,50 +955,29 @@
 			</a>
 
 			<div class="t-center s-text8 p-t-20">
-				Copyright © 2018 All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				Copyright © 2020 <a href="index.html" class="guitar-center">GuitarCenter</a>
 			</div>
 		</div>
 	</footer>
 
 
 
-	<!-- Back to top -->
+	<!-- Button trở về đầu trang (back to top) -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn">
 		<span class="symbol-btn-back-to-top">
 			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
 		</span>
 	</div>
 
-	<!-- Container Selection -->
-	<div id="dropDownSelect1"></div>
-	<div id="dropDownSelect2"></div>
 
-
-
-<!--===============================================================================================-->
+	<!-- Thư viện jquery-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+
 	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+	<!-- file js của thư viện bootstrap -->
 	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-	<script type="text/javascript">
-		$(".selection-1").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect1')
-		});
-
-		$(".selection-2").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect2')
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
-	<script src="js/map-custom.js"></script>
-<!--===============================================================================================-->
+	<!--các file xử lý jquery, js-->
 	<script src="js/main.js"></script>
 	<script src="js/additional-jquery.js"></script>
 

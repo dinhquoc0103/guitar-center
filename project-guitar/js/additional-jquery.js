@@ -69,8 +69,13 @@ $(document).ready(function () {
         }
         $(".block-top-1 .btn-active-send-review").text(textBtn);
     });
-    
 
+
+    // slidedown show loại sản phẩm trang danh sách sản phẩm
+    $(".btn-chevron-down").click(function(){
+        $(this).parent('li').children('ul').stop().slideToggle(800, 'linear');
+        $(this).stop().toggleClass("active-rotate-chevron-down");    
+    });
     
 
 });

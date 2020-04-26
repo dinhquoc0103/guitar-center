@@ -3,7 +3,9 @@
 *:not(i){
     font-family: 'Open Sans'!important;
 }
-
+h3{
+    font-weight: bold;
+}
 /* ======== màn hình trên 992px , dành cho laptop, máy tính ======== */
 /* ======== TOPBAR ======== */
 .topbar .topbar-social a{
@@ -63,10 +65,12 @@
     padding-right: 40px;
 
 }
-
+.text-color-title{
+    color: #e65540;
+}
 /* ======== logo ========= */
 
-.logo img{
+.logo img, .logo-mobile img{
     width: 100px;
     max-height: none;
 }
@@ -469,7 +473,7 @@ div.fb-comments > span > iframe[style] {
     color: #222222;
 }
 
-.status{
+.status-product{
     color: #888888;
     margin-bottom: 8px;
 }
@@ -626,7 +630,11 @@ h3.title{
 .column-3, .column-5, .total-price span{
     font-weight: bold;
 }
-/* ======== ĐĂNG KÝ TÀI KHOẢN, ĐĂNG NHẬP ======== */
+
+
+
+
+/* ======== TRANG ĐĂNG KÝ TÀI KHOẢN, ĐĂNG NHẬP ======== */
 .register-page .container .row, .login-page .container .row{
     justify-content: center;
 }
@@ -636,6 +644,7 @@ h3.title{
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
+    color: #e65540;
 }
 
 .end{
@@ -1103,8 +1112,448 @@ h3.title{
 .wp-check-out .form-check-out textarea{
     background: #F4F4F4;
 }
+.wp-check-out .form-check-out h4{
+    color: #e65540;
+}
+
+.list-product li{
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1023px){
+    .wp-check-out .list-product li .name-product {
+        width: 66%;
+    }
+    .price-products {
+        font-size: 13px;
+    }
+    .name-product{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 599px){
+
+    .wp-check-out .text-product, .total-price-product, .price-transport, .total {
+        font-size: 20px;
+    }
+    .wp-check-out .list-product li .name-product {
+        width: 61%;
+    }
+   
+}
 
 
+
+
+/* ======== TRANG DANH SÁCH SẢN PHẨM ======== */
+.leftbar h4{
+    padding-top: 15px;
+    color: #E65540;
+    font-weight: bold;
+}
+.leftbar>ul{
+    /* border-bottom: 2px solid #E65540; */
+}
+.leftbar ul li{
+    position: relative;
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
+}
+.leftbar ul li a{
+    display: block;
+}
+.leftbar ul li i{
+    position: absolute;
+    top: 8px;
+    padding: 5px 10px;
+    font-size: 11px;
+    right: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #888888;
+}
+.leftbar ul li i:hover{
+    color: #E65540;
+}
+.leftbar ul li ul{
+    display: none;
+}
+/* xoay nút chevron-down ngược lên  */
+.active-rotate-chevron-down{
+    transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+/* .active-rotate-down-chevron-up{
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+} */
+
+
+
+
+
+/* ======== TRANG TÀI KHOẢN CỦA TÔI ======== */
+.left-sidebar-tab{
+    margin-bottom: 25px;
+}
+
+/* name và avatar user */
+.wp-name-and-avatar-user{
+    margin-bottom: 25px;
+    margin-right: 0px; 
+    margin-left: 0px;
+}
+.avatar-user{
+    width: 100px;
+    height: auto;
+    margin-right: 18px;
+}
+.avatar-user img{
+    width: 100%;
+}
+.name-user{
+    width: 200px;
+    padding-top: 10px;
+}
+.name-user .name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #E65540;
+}
+
+/* tab-left-sidebar menu bên trái  */
+.tab-menu{
+    border: 1px solid #e1e1e1;  
+    border-bottom: none;
+}
+.tab-menu a{
+    display: block;
+    padding: 15px 15px;
+    border-bottom: 1px solid #e1e1e1;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.tab-menu a:hover{
+    background: #E65540;
+    color: #ffffff;
+}
+.tab-menu a i{
+    margin-right: 10px;
+}
+
+.left-sidebar-tab a.active{
+    background: #E65540;
+    color: #ffffff;
+}
+.left-sidebar-tab .nav{
+    display: block !important;
+
+}
+
+
+
+.title-tab{
+    padding: 0px 0px 20px 5px;
+    text-transform: uppercase;
+    color: #e65540;
+    margin-bottom: 20px;
+}
+.wp-overview,
+.wp-order-history,
+.wp-info-account,
+.wp-order-placed  {
+    padding: 25px;
+    border: 1px solid #e1e1e1; 
+}
+/* tổng quan tài khoản của tôi  */
+.wp-overview{
+    
+    
+    /* display:none;  */
+}
+.wp-overview .content-overview{
+    margin-right: 0px; 
+    margin-left: 0px;
+}
+.wp-overview .content-overview .overview-block{
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.total-order{
+    background: #00C0EF;
+}
+.cancel-order{
+    background: #DD4B39;
+}
+.delivering-order{
+    background: #F39C12;
+}
+.complete-order{
+    background: #00A65A;
+}
+.wp-overview .content-overview .overview-block .name-block{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: lightyellow;
+}
+.wp-overview .content-overview .overview-block .quantity-order{
+    color: lightyellow;
+}
+
+/* lịch sử đặt hàng tài khoản của tôi  */
+.wp-order-history {
+    /* display: none; */
+}
+.block-search-by-code, .block-status{
+    
+    margin-right: 20px;
+}
+.block-search-by-code, .block-status, .btn-search-order{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   
+}
+.search-by-code, .status{
+    padding: 13px 20px;
+    border: 1px solid #e1e1e1 !important;
+    font-size: 15px;
+}
+/* .search-by-code:focus , .status:focus{
+    border: 2px solid #e65540 !important;
+} */
+.status{
+    margin-bottom: 0px;
+    border: none;
+}
+.status:focus{
+    border: none;
+}
+.btn-search-order{
+    padding: 13px 40px;
+    cursor: pointer;
+}
+
+/* list các đơn hàng của tài khoản  */
+.block-list-order .list-order li{
+    padding: 20px;
+    background: #F2F3F5;
+    margin-bottom: 10px
+    /* border-radius: 25px; */
+}
+.block-code-order{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.block-code-order .code-order{
+    font-size: 22px;
+    color: #00A65A;
+    margin-left: 5px;
+}
+.block-customer,.block-day-order, .block-status-order, .block-total-price-order, .block-detail-order a{
+    margin-bottom: 4px;
+    font-size: 17px;
+}
+.block-customer .customer{
+    font-weight: bold;
+    margin-left: 5px;
+}
+.block-day-order .day-order{
+    font-style: italic;
+    color: #888888;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.block-status-order .status-order{
+    font-variant: all-small-caps;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 17px;
+    color: #00C0EF;
+}
+.block-total-price-order .total-price-order{
+    font-weight: 700;
+    color: #DD4B39;
+    margin-left: 5px;
+}
+.block-total-price-order i{
+    margin-right: 8px;
+}
+.block-detail-order a{
+    display: block;
+    font-style: oblique;
+    font-weight: bold;
+    color: #F39C12;
+}
+.block-detail-order a:hover{
+    color: #f00;
+    transform: scaleX(1.05);
+    transition: all 1s;
+}
+.block-detail-order a i{
+    font-size: 12px;
+}
+
+/* responsive trang tài khoản của tôi  */
+@media screen and (max-width: 1204px){
+    .wp-overview .content-overview .overview-block {
+        padding: 18px;
+    }
+    .wp-overview .content-overview .overview-block .name-block {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 767px){
+    .wp-overview .content-overview .overview-block {
+        /* padding: 18px; */
+        margin-bottom: 10px;
+    }
+    /* .wp-overview .content-overview .overview-block .name-block {
+        font-size: 16px;
+    } */
+}
+@media screen and (max-width: 413px){
+    .wp-overview .content-overview>div{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .block-code-order {
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 374px){
+    .title-tab{
+        font-size: 22px;
+    }
+    .block-customer,.block-day-order, .block-status-order, .block-total-price-order, .block-detail-order a{
+        font-size: 13px;
+    }
+    .block-day-order .day-order {
+        font-size: 13px;
+    }
+    .block-total-price-order i {
+        margin-right: 6px;
+    }
+}
+
+
+
+
+/* ======== TRANG ĐẶT HÀNG THÀNH CÔNG ======== */
+.info-top .icon-check-circle i{
+    font-size: 80px;
+    color: #36c357;
+}
+.info-top h1{
+    font-size: 37px;
+    font-weight: 500;
+}
+.info-top .text-order-and-status{
+    padding: 10px 20px;
+    display: inline-block;
+    background: #E3E1E1;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #212529;
+    font-weight: 700;
+    border-radius: 28px;
+}
+
+
+.info-order .title-info-order{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #e65540;
+}
+.info-order p{
+    font-size: 16px;
+}
+.info-order .order-detail .table-order-detail{
+    border: 1px solid #e1e1e1;
+    width: 100%;
+    margin-top: 15px;
+}
+.table-order-detail tr{
+    border-bottom: 1px solid #e1e1e1;
+    /* padding: 10px; */
+}
+.table-order-detail thead tr th{
+    text-transform: uppercase;
+}
+.table-order-detail tr th{
+    border-right: 1px solid #e1e1e1;
+    padding: 15px;
+}
+tr td{
+    padding: 15px;
+    font-size: 16px;
+    color: #888888;
+}
+
+/* responsive trang đặt hàng thành công  */
+@media screen and (max-width: 599px){
+    .info-top h1 {
+        font-size: 26px;
+    }
+    .info-top .text-order-and-status {
+        font-size: 16px;
+    }
+}
+
+
+/* ======== chi tiết đơn đã đặt ở phần xem chi tiết đơn ======== */
+.wp-order-placed .content-order-placed .table-order-placed{
+    border: 1px solid #e1e1e1;
+    width: 100%;
+    
+}
+.table-order-placed tr{
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+}
+.table-order-placed tr th, .table-order-placed tr td{
+    border-right: 1px solid #e1e1e1;
+    padding: 15px;
+}
+.table-order-placed thead tr th{
+    text-align: center;
+    text-transform: uppercase;
+}
+/* responsive bảng trong chi tiết đơn hàng của tab lịch sử đặt hàng  */
+@media screen and (max-width: 767px){
+    .wp-order-placed .content-order-placed{
+        overflow-x: auto;
+    }
+}
+@media screen and (max-width: 599px){
+    .table-order-placed thead{
+        display: none;
+    }
+    .table-order-placed tr th,.table-order-placed tr td{
+        display: block;
+        border-bottom: 1px solid #e1e1e1;
+
+    }
+    .table-order-placed tr{
+        text-align: left;
+    }
+}
 
 
 

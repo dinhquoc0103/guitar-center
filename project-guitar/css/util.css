@@ -3840,6 +3840,15 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 .bo17 {
 	border-bottom: 1px dashed #d9d9d9;
 }
+.bo18 {
+	border-bottom: 2px dashed #e6e6e6;
+}
+.bo19{
+	border: 1px solid #e1e1e1;
+}
+.bo20{
+	border: 1px solid #e6e6e6;
+}
 
 /*[  ]
 -----------------------------------------------------------

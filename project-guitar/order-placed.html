@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Đăng ký tài khoản - GuitarCenter</title>
+	<title>Tài khoản của tôi- guitarcenter</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Thêm icon trên title ở tab trình duyệt -->
@@ -28,12 +28,12 @@
 	<link rel="stylesheet" type="text/css" href="css/additional-style.css">
 	<!-- add font chữ 'Open Sans'  -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	
 </head>
 <body class="animsition">
 	<!-- Nhúng fanpage của shop vào web  -->
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
-
 
 	<!-- Header -->
 	<header class="header1">
@@ -695,78 +695,197 @@
 			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
 		</a>
 
-		<a href="cart.html" class="s-text16">
-			Đăng ký tài khoản
-			<!-- <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i> -->
+		<a href="my-account.html" class="s-text16">
+			Tài khoản của tôi
 		</a>
 	</div>
 
-	<!-- content đăng ký tài khoản -->
-	<section class="register-page bgwhite p-t-30 p-b-60">
-		<div class="container">
-			<!-- dùng thiết lập justify-content: center  -->
+    <!-- content tài khoản của tôi  -->
+    <section class="p-t-55 p-b-65">
+        <div class="container">
 			<div class="row">
-				<!-- khối đăng ký tài khoản  -->
-				<div class="col-md-6 p-b-30">
-					<form action="post-du-lieu-den-server-day" class="form-register">
-						<!-- title đăng ký tài khoản  -->
-						<h4 class="m-text26 p-b-30 p-t-15">
-							Đăng ký tài khoản
-						</h4>
-
-						<!-- khung input nhập họ và tên  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name" placeholder="Họ Và Tên">
+				<!-- sidebar bên trái  -->
+				<div class="left-sidebar-tab col-lg-3 col-12">
+					<!-- tên và avatar của user  -->
+					<div class="wp-name-and-avatar-user row flex-nowrap">
+						<!-- avatar user  -->
+						<div class="avatar-user ">
+							<img src="https://icdn.dantri.com.vn/thumb_w/640/2017/23-1495185181020.jpg" alt="avatar user"
+							title="avatar-user">
 						</div>
-
-						<!-- khung input nhập tên đăng nhập  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name-login" placeholder="Tên Đăng Nhập">
+						<!-- tên user  -->
+						<div class="name-user">
+							<span class="s-text7">Tài khoản của</span>
+							<br>
+							<span class="name">Lê Quốc </span>
 						</div>
+					</div>
+					<!-- các tab  -->
+					<div class="tab-menu nav" role="tablist" >
+						<!-- tab tổng quan  -->
+						<a href="#overview" id="overview-tab" data-toggle="tab" role="tab">
+							<i class="fa fa-home" aria-hidden="true"></i>
+							Tổng quan
+						</a>
+						<!-- tab lịch sử các đơn hàng đã đặt -->
+						<a href="#order-history" id="order-history-tab" class="active"  data-toggle="tab" role="tab">
+							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+							Lịch sử đặt hàng
+						</a>
+						<!-- tab thông tin của tài khoản  -->
+						<a href="#info-account" id="info-account-tab" data-toggle="tab" role="tab">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							Thông tin tài khoản
+						</a>
+						<!-- tab đăng xuất tài khoản  -->
+						<a href="index.html" >
+							<i class="fa fa-sign-out" aria-hidden="true"></i>
+							Đăng xuất
+						</a>
+					</div>
+				</div>
 
-						<!-- khung input nhập số điện thoại  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="phone-number" placeholder="Số Điện Thoại">
-						</div>
-
-						<!-- khung input nhập email  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="email" name="email" placeholder="Email">
-						</div>
-
-						<!-- khung input nhập mật khẩu  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="password" name="password" placeholder="Mật Khẩu">
-						</div>
-
-						<!-- khung input xác nhận mật khẩu  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="-confirm-password" name="confirm-password" placeholder="Xác Nhận Mật Khẩu">
-						</div>
-
-						<!-- <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="message" placeholder="Message"></textarea> -->
-
-						<!-- khối button đăng ký và bạn đã có tài khoản?  -->
-						<div class="end">
-							<!-- Button đăng ký-->
-							<div class="w-size25">
-								<button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
-									Đăng Ký
-								</button>
+				<!-- nội dung các tab  -->
+				<div class="wp-content-tab col-lg-9 col-12">
+					<div class="tab-content">
+						<!-- nội dung tab tổng quan  -->
+						<div class="wp-overview tab-pane fade " id="overview" role="tabpanel" >
+							<h3 class="title-tab bo18">Tổng quan</h3>
+							<div class="content-overview row">
+								<!-- khối tổng đơn -->
+								<div class="col-lg-3 col-md-3 col-sm-6 col-6">
+									<div class="overview-block total-order">
+										<p class="name-block ">Tổng đơn</p>
+										<span class="quantity-order">18</span>
+									</div>
+								</div>
+								<!-- khối đơn huỷ  -->
+								<div class="col-lg-3 col-md-3 col-sm-6 col-6">
+									<div class="overview-block cancel-order">
+										<p class="name-block">Đơn huỷ</p>
+										<span class="quantity-order">18</span>
+									</div>
+								</div>
+								<!-- khối đang giao -->
+								<div class="col-lg-3 col-md-3 col-sm-6 col-6">
+									<div class="overview-block delivering-order">
+										<p class="name-block">Đang giao</p>
+										<span class="quantity-order">18</span>
+									</div>
+								</div>
+								<!-- khối giao hoàn thành  -->
+								<div class="col-lg-3 col-md-3 col-sm-6 col-6">
+									<div class="overview-block complete-order">
+										<p class="name-block">Hoàn thành</p>
+										<span class="quantity-order">18</span>
+									</div>
+								</div>
 							</div>
+						</div>
 
-							<!-- đã có tài khoản  -->
-							<div class="already-account">
-								<span>Bạn đã có tài khoản?</span>
-								<a href="login.html">Đăng Nhập</a>
+						<!-- nội dung chi tiết từng đơn trong tab lịch sử đặt hàng  -->
+						<div class="wp-order-placed tab-pane fade show active " id="order-history" role="tabpanel" >
+							<h3 class="title-tab bo18">Chi tiết đơn hàng</h3>
+							<div class="content-order-placed">
+								<table class="table-order-placed">
+									<thead>
+										<tr>
+											<th>Hình ảnh</th>
+											<th>Tên sản phẩm</th>
+											<th>Giá</th>
+											<th>Số lượng</th>
+											<th>Tổng giá</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<img src="https://vietthuong.vn/upload/images/product/113.jpg" alt=""
+												width="80px" height="80px" >
+											</td>
+											<th>Taylor ABCDEFGH</th>
+											<td>28.000.000đ</td>
+											<td>8</td>
+											<td>28.000.000đ</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="https://vietthuong.vn/upload/images/product/113.jpg" alt=""
+												width="80px" height="80px" >
+											</td>
+											<th>Taylor ABCDEFGH</th>
+											<td>28.000.000đ</td>
+											<td>8</td>
+											<td>28.000.000đ</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
-					</form>
+
+
+						<div class="wp-info-account tab-pane fade" id="info-account" role="tabpanel" >
+							<h3 class="title-tab bo18">Thông tin tài khoản</h3>
+							<div class="content-info-account">
+								<form action="post-du-lieu-den-server-day" class="form-register">
+			
+									<!-- họ và tên  -->
+									<label>Họ và tên</label>
+									<div class="bo4 of-hidden size15 m-b-20">
+										<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name" value="Lê Quốc" placeholder="Họ Và Tên">
+									</div>
+			
+									<!-- tên đăng nhập  -->
+									<label>Tên đăng nhập</label>
+									<div class="bo4 of-hidden size15 m-b-20">
+										<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name-login" value="dinhquoc1234" placeholder="Tên Đăng Nhập">
+									</div>
+			
+									<!-- số điện thoại  -->
+									<label>Số điện thoại</label>
+									<div class="bo4 of-hidden size15 m-b-20">
+										<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="phone-number" value="0888888888" placeholder="Số Điện Thoại">
+									</div>
+			
+									<!-- email  -->
+									<label>Email</label>
+									<div class="bo4 of-hidden size15 m-b-20">
+										<input class="sizefull s-text7 p-l-22 p-r-22" type="email" name="email" value="dinhquoc0103@gmail.com" placeholder="Email">
+									</div>
+			
+									<!-- địa chỉ  -->
+									<label>Địa chỉ</label>
+									<div class="bo4 of-hidden size15 m-b-20">
+										<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="address" value="Tân Hiệp - Kiên Giang"placeholder="Địa chỉ">
+									</div>
+			
+									<!-- tải lên avatar -->
+									<label>Tải lên ảnh đại diện</label>
+									<div class="bo4 of-hidden size15 m-b-20">
+										<input class="sizefull s-text7 p-l-22 p-r-22 p-t-10" type="file" name="avatar" placeholder="">
+									</div>
+									<!-- button lưu thay đổi thông tin -->
+									<div class="w-size25">
+										<button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
+											Lưu thay đổi
+										</button>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- kết thúc khối đăng ký tài khoản  -->
+    </section>
+
+
+
+
+
+
+
 
 
 	<!-- Footer -->
@@ -870,37 +989,7 @@
 				</ul>
 			</div>
 
-			<!-- <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-				<h4 class="s-text12 p-b-30">
-					Help
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Track Order
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Returns
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Shipping
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div> -->
+			
 
 			<!-- đăng ký nhận bản tin  -->
 			<div class="w-size29 p-t-30 p-l-15 p-r-15 respon3">
@@ -969,6 +1058,11 @@
 		</span>
 	</div>
 
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+
+
 	<!-- Thư viện jquery-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 
@@ -976,6 +1070,18 @@
 	<!-- file js của thư viện bootstrap -->
 	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--custom hộp thoại selectbox-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			// dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+	<!-- js của thư viện slick slide, phải để sau thư viện jquery và trước thẻ đóng body-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+	
 	<!--các file xử lý jquery, js-->
 	<script src="js/main.js"></script>
 	<script src="js/additional-jquery.js"></script>

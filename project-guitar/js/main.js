@@ -2,8 +2,7 @@
 (function ($) {
     "use strict";
 
-    /*[ Load page ]
-    ===========================================================*/
+    /* Hiệu ứng load trang*/
     $(".animsition").animsition({
         inClass: 'fade-in',
         outClass: 'fade-out',
@@ -24,8 +23,7 @@
         transition: function(url){ window.location.href = url; }
     });
     
-    /*[ Back to top ] Button scroll về đầu màn hình
-    ===========================================================*/
+    /*[ Back to top ] Button scroll về đầu màn hình */
     var windowH = $(window).height()/2;
 
     $(window).on('scroll',function(){

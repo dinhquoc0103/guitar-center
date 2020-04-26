@@ -1,295 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product</title>
+	<title>Danh sách sản phẩm</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
+	<!-- Thêm icon trên title ở tab trình duyệt -->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
+	<!-- fontawesome 4.7 -->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
-<!--===============================================================================================-->
+	<!-- Tạo hiệu ứng khi phần tử vừa xuất hiện dùng cho nội dung trên slider ngang full chiều dài màn hình -->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
+	<!-- Tạo button menu ba gạch-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
+	<!-- Hiệu ứng khi load, refesh trang  -->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
+	<!-- Tạo hộp thoại select box đẹp hơn-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
+	<!-- slick tạo slider -->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
-<!--===============================================================================================-->
+	<!-- các file css -->
+	<!-- file css định nghĩa sẵn class -->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
+	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/additional-style.css">
+	<!-- add font chữ 'Open Sans'  -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 </head>
 <body class="animsition">
+	<!-- Nhúng fanpage của shop vào web  -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
 
 	<!-- Header -->
 	<header class="header1">
-		<!-- Header desktop -->
+
+		<!-- Header screen laptop, máy tính -->
 		<div class="container-menu-header">
+
+			<!-- topbar  -->
 			<div class="topbar">
+
 				<div class="topbar-social">
-					<a href="#" class="topbar-social-item fa fa-facebook"></a>
-					<a href="#" class="topbar-social-item fa fa-instagram"></a>
-					<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-					<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-					<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+					<a href="">
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					</a>
+					<a href="">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+					<a href="">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					</a>
 				</div>
 
 				<span class="topbar-child1">
-					Free shipping for standard order over $100
+					<span class="support">Hỗ trợ 24/7</span>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<span class="phone-number">0123.456.789</span>
 				</span>
 
 				<div class="topbar-child2">
-					<span class="topbar-email">
-						fashe@example.com
-					</span>
+					<!-- đăng nhập -->
+					<div class="login">
+						<a href="login.html">
+							<i class="fa fa-sign-in" aria-hidden="true"></i>
+							Đăng nhập
+						</a>
+					</div>
 
-					<div class="topbar-language rs1-select2">
-						<select class="selection-1" name="time">
-							<option>USD</option>
-							<option>EUR</option>
-						</select>
+					<!-- đăng ký -->
+					<div class="register">
+						<a href="register.html">
+							<i class="fa fa-user-plus" aria-hidden="true"></i>
+							Đăng ký
+						</a>
+					</div>
+
+					<!-- đã đăng nhập -->
+					<div class="already-logged">
+						<a href="my-account.html">
+							<img src="images/icons/icon-header-01.png" alt="">
+							<span>Quốc</span>
+						</a>
+					</div>
+
+					<!-- đăng xuất -->
+					<div class="log-out">
+						<a href="index.html">
+							<i class="fa fa-sign-out" aria-hidden="true"></i>
+							Đăng xuất
+						</a>
 					</div>
 				</div>
+				
+				
+
+				
 			</div>
 
+			<!-- header đây -->
 			<div class="wrap_header">
-				<!-- Logo -->
+
+				<!-- Logo của store -->
 				<a href="index.html" class="logo">
 					<img src="images/icons/logo.png" alt="IMG-LOGO">
 				</a>
 
-				<!-- Menu -->
+				<!-- Menu ngang -->
 				<div class="wrap_menu">
 					<nav class="menu">
 						<ul class="main_menu">
+							<!-- trang chủ -->
 							<li>
-								<a href="index.html">Home</a>
+								<a href="index.html">Trang chủ</a>
+							</li>
+							<!-- guitar  -->
+							<li>
+								<a href="product.html">
+									Guitar
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</a>
 								<ul class="sub_menu">
-									<li><a href="index.html">Homepage V1</a></li>
-									<li><a href="home-02.html">Homepage V2</a></li>
-									<li><a href="home-03.html">Homepage V3</a></li>
+									<!-- guitar acoustic  -->
+									<li>
+										<a href="">
+											Guitar acoustic
+											<i class="fa fa-chevron-right" aria-hidden="true"></i>
+										</a>
+										<ul class="sub_menu">
+											<li><a href="">Taylor</a></li>
+											<li><a href="">Fender</a></li>
+											<li><a href="">Takamine</a></li>
+											<li><a href="">Kapok</a></li>
+											<li><a href="">Suzuki</a></li>
+											<li><a href="">TangleWood</a></li>
+											<li><a href="">Sigma</a></li>
+											<li><a href="">Martin</a></li>
+											<li><a href="">Epiphone</a></li>
+											<li><a href="">Yamaha</a></li>
+											<li><a href="">Greg bennett</a></li>
+										</ul>
+									</li>
+									<!-- guitar classic -->
+									<li>
+										<a href="">
+											Guitar classic
+											<i class="fa fa-chevron-right" aria-hidden="true"></i>
+										</a>
+										<ul class="sub_menu">
+											<li><a href="">Taylor</a></li>
+											<li><a href="">Fender</a></li>
+											<li><a href="">Takamine</a></li>
+											<li><a href="">Kapok</a></li>
+											<li><a href="">Suzuki</a></li>
+											<li><a href="">Cordoba</a></li>
+											<li><a href="">Epiphone</a></li>
+											<li><a href="">Yamaha</a></li>
+											<li><a href="">Ortega</a></li>
+											<li><a href="">Greg bennett</a></li>
+										</ul>
+									</li>
+									<!-- guitar electric  -->
+									<li>
+										<a href="">
+											Guitar electric
+											<i class="fa fa-chevron-right" aria-hidden="true"></i>
+										</a>
+										<ul class="sub_menu">
+											<li><a href="">Jackson</a></li>
+											<li><a href="">Taylor điện</a></li>
+											<li><a href="">Fender</a></li>
+											<li><a href="">Squier</a></li>
+											<li><a href="">Charvel</a></li>
+											<li><a href="">EVH</a></li>
+											<li><a href="">Epiphone</a></li>
+											<li><a href="">Yamaha</a></li>
+										</ul>
+									</li>
+									<!-- guitar bass -->
+									<li>
+										<a href="">
+											Guitar bass
+											<i class="fa fa-chevron-right" aria-hidden="true"></i>
+										</a>
+										<ul class="sub_menu">
+											<li><a href="">Jackson</a></li>
+											<li><a href="">Fender</a></li>
+											<li><a href="">Squier</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li class="sale-noti">
+								<a href="product.html">
+									Ukulele
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</a>
+								<ul class="sub_menu">
+									<li><a href="">Fender</a></li>
+									<li><a href="">Diviser</a></li>
+									<li><a href="">Lazer</a></li>
+									<li><a href="">Suzuki</a></li>
+									<li><a href="">Soprano</a></li>
+									<li><a href="">TangleWood</a></li>
+									<li><a href="">Concert</a></li>
 								</ul>
 							</li>
 
 							<li>
-								<a href="product.html">Shop</a>
-							</li>
-
-							<li class="sale-noti">
-								<a href="product.html">Sale</a>
-							</li>
-
-							<li>
-								<a href="cart.html">Features</a>
-							</li>
-
-							<li>
-								<a href="blog.html">Blog</a>
-							</li>
-
-							<li>
-								<a href="about.html">About</a>
+								<a href="cart.html">
+									Phụ kiện
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</a>
+								<ul class="sub_menu">
+									<li><a href="">Pick gãy đàn</a></li>
+									<li><a href="">Dây đàn</a></li>
+									<li><a href="">Capo</a></li>
+									<li><a href="">Khoá đàn</a></li>
+									<li><a href="">Bao đàn</a></li>
+								</ul>
 							</li>
 
 							<li>
-								<a href="contact.html">Contact</a>
+								<a href="blog.html">Tin tức</a>
+							</li>
+							<li>
+								<a href="contact.html">Liên hệ</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 
-				<!-- Header Icon -->
+				<!-- Header: khung tìm kiếm, đăng nhập, đăng ký, đã đăng nhập, giỏ hàng và view giỏ hàng-->
 				<div class="header-icons">
-					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-					</a>
 
+					<!-- tìm kiếm  -->
+					<a href="javascript:void(0)" class="description-search">
+							Tìm kiếm
+							<i class="fa fa-search" aria-hidden="true"></i>
+					</a>
+					<form action="" id="search">
+						<input type="text" id="frame-search" name='q' placeholder="Tìm kiếm">
+						<button type="submit"  id="btn-search">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+					</form>
+
+
+					<!-- đường line ngăn cách giỏ hàng  -->
 					<span class="linedivide1"></span>
 
-					<div class="header-wrapicon2">
-						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
-						<span class="header-icons-noti">0</span>
 
-						<!-- Header cart noti -->
+					<div class="header-wrapicon2">
+
+						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<span class="header-icons-noti">8</span>
+
+						<!-- Header dropdown show giỏ hàng trên một khung nhỏ-->
 						<div class="header-cart header-dropdown">
+
+							<!-- list sản phẩm trong giỏ hàng  -->
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
-									<div class="header-cart-item-img">
-										<img src="images/item-cart-01.jpg" alt="IMG">
-									</div>
-
+									<!-- image sản phẩm -->
+									<a href="product-detail.html" class="header-cart-item-img">
+										<img src="https://vietthuong.vn//upload/images/TAYLOR/TAYLOR%20T5%20PRO.jpg" alt="IMG">
+									</a>
+									<!-- Tên sản phẩm, số lượng và giá -->
 									<div class="header-cart-item-txt">
-										<a href="#" class="header-cart-item-name">
-											White Shirt With Pleat Detail Back
+										<a href="product-detail.html" class="header-cart-item-name">
+											Taylor T5Z Pro  Taylor T5Z Pro
 										</a>
 
-										<span class="header-cart-item-info">
-											1 x $19.00
-										</span>
+										<div class="header-cart-item-info">
+											<span class="quantity">1</span>
+											<span>x</span>
+											<span>26.000.000đ</span>
+										</div>
+
+										<button class="remove-item">
+											<i class="fa fa-trash-o" aria-hidden="true"></i>
+										</button>
 									</div>
 								</li>
 
 								<li class="header-cart-item">
-									<div class="header-cart-item-img">
-										<img src="images/item-cart-02.jpg" alt="IMG">
-									</div>
-
+									<!-- image sản phẩm -->
+									<a href="product-detail.html" class="header-cart-item-img">
+										<img src="https://vietthuong.vn//upload/images/TAYLOR/TAYLOR%20T5%20PRO.jpg" alt="IMG">
+									</a>
+									<!-- Tên sản phẩm, số lượng và giá -->
 									<div class="header-cart-item-txt">
-										<a href="#" class="header-cart-item-name">
-											Converse All Star Hi Black Canvas
+										<a href="product-detail.html" class="header-cart-item-name">
+											Taylor T5Z Pro  Taylor T5Z Pro
 										</a>
 
-										<span class="header-cart-item-info">
-											1 x $39.00
-										</span>
+										<div class="header-cart-item-info">
+											<span class="quantity">1</span>
+											<span>x</span>
+											<span>26.000.000đ</span>
+										</div>
+
+										<button class="remove-item">
+											<i class="fa fa-trash-o" aria-hidden="true"></i>
+										</button>
 									</div>
 								</li>
 
 								<li class="header-cart-item">
-									<div class="header-cart-item-img">
-										<img src="images/item-cart-03.jpg" alt="IMG">
-									</div>
-
+									<!-- image sản phẩm -->
+									<a href="product-detail.html" class="header-cart-item-img">
+										<img src="https://vietthuong.vn//upload/images/TAYLOR/TAYLOR%20T5%20PRO.jpg" alt="IMG">
+									</a>
+									<!-- Tên sản phẩm, số lượng và giá -->
 									<div class="header-cart-item-txt">
-										<a href="#" class="header-cart-item-name">
-											Nixon Porter Leather Watch In Tan
+										<a href="product-detail.html" class="header-cart-item-name">
+											Taylor T5Z Pro  Taylor T5Z Pro
 										</a>
 
-										<span class="header-cart-item-info">
-											1 x $17.00
-										</span>
+										<div class="header-cart-item-info">
+											<span class="quantity">1</span>
+											<span>x</span>
+											<span>26.000.000đ</span>
+										</div>
+
+										<button class="remove-item">
+											<i class="fa fa-trash-o" aria-hidden="true"></i>
+										</button>
 									</div>
 								</li>
 							</ul>
-
+							
+							<!-- Tổng giá sản phẩm trên giỏ hàng ở header  -->
 							<div class="header-cart-total">
-								Total: $75.00
+								<p>Tổng giá: <span>45.000.000đ</span></p>
 							</div>
 
+							<!-- header giỏ hàng button xem giỏ hàng và button thanh toán  -->
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
-									<!-- Button -->
+									<!-- Button xem giỏ hàng-->
 									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										View Cart
+										Xem giỏ hàng
 									</a>
 								</div>
 
 								<div class="header-cart-wrapbtn">
-									<!-- Button -->
-									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										Check Out
+									<!-- Button  thanh toán-->
+									<a href="check-out.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Thanh toán
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 
-		<!-- Header Mobile -->
+
+
+		<!-- Header cho màn hình mobile, tablet -->
 		<div class="wrap_header_mobile">
-			<!-- Logo moblie -->
+
+			<!-- Logo mobile -->
 			<a href="index.html" class="logo-mobile">
 				<img src="images/icons/logo.png" alt="IMG-LOGO">
 			</a>
 
-			<!-- Button show menu -->
+			<!-- Button show menu màn hình mobile-->
 			<div class="btn-show-menu">
+
 				<!-- Header Icon mobile -->
 				<div class="header-icons-mobile">
-					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-					</a>
 
+					<!-- line ngăn cách giỏ hàng  -->
 					<span class="linedivide2"></span>
+
 
 					<div class="header-wrapicon2">
 						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
-						<span class="header-icons-noti">0</span>
+						<span class="header-icons-noti">8</span>
 
-						<!-- Header cart noti -->
+						<!-- Header dropdown show giỏ hàng trên một khung nhỏ-->
 						<div class="header-cart header-dropdown">
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
-									<div class="header-cart-item-img">
-										<img src="images/item-cart-01.jpg" alt="IMG">
-									</div>
-
+									<!-- image sản phẩm -->
+									<a href="product-detail.html" class="header-cart-item-img">
+										<img src="https://vietthuong.vn//upload/images/TAYLOR/TAYLOR%20T5%20PRO.jpg" alt="IMG">
+									</a>
+									<!-- Tên sản phẩm, số lượng và giá -->
 									<div class="header-cart-item-txt">
-										<a href="#" class="header-cart-item-name">
-											White Shirt With Pleat Detail Back
+										<a href="product-detail.html" class="header-cart-item-name">
+											Taylor T5Z Pro  Taylor T5Z Pro
 										</a>
 
-										<span class="header-cart-item-info">
-											1 x $19.00
-										</span>
+										<div class="header-cart-item-info">
+											<span class="quantity">1</span>
+											<span>x</span>
+											<span>26.000.000đ</span>
+										</div>
+
+										<button class="remove-item">
+											<i class="fa fa-trash-o" aria-hidden="true"></i>
+										</button>
 									</div>
 								</li>
 
 								<li class="header-cart-item">
-									<div class="header-cart-item-img">
-										<img src="images/item-cart-02.jpg" alt="IMG">
-									</div>
-
+									<!-- image sản phẩm -->
+									<a href="product-detail.html" class="header-cart-item-img">
+										<img src="https://vietthuong.vn//upload/images/TAYLOR/TAYLOR%20T5%20PRO.jpg" alt="IMG">
+									</a>
+									<!-- Tên sản phẩm, số lượng và giá -->
 									<div class="header-cart-item-txt">
-										<a href="#" class="header-cart-item-name">
-											Converse All Star Hi Black Canvas
+										<a href="product-detail.html" class="header-cart-item-name">
+											Taylor T5Z Pro  Taylor T5Z Pro
 										</a>
 
-										<span class="header-cart-item-info">
-											1 x $39.00
-										</span>
+										<div class="header-cart-item-info">
+											<span class="quantity">1</span>
+											<span>x</span>
+											<span>26.000.000đ</span>
+										</div>
+
+										<button class="remove-item">
+											<i class="fa fa-trash-o" aria-hidden="true"></i>
+										</button>
 									</div>
 								</li>
 
 								<li class="header-cart-item">
-									<div class="header-cart-item-img">
-										<img src="images/item-cart-03.jpg" alt="IMG">
-									</div>
-
+									<!-- image sản phẩm -->
+									<a href="product-detail.html" class="header-cart-item-img">
+										<img src="https://vietthuong.vn//upload/images/TAYLOR/TAYLOR%20T5%20PRO.jpg" alt="IMG">
+									</a>
+									<!-- Tên sản phẩm, số lượng và giá -->
 									<div class="header-cart-item-txt">
-										<a href="#" class="header-cart-item-name">
-											Nixon Porter Leather Watch In Tan
+										<a href="product-detail.html" class="header-cart-item-name">
+											Taylor T5Z Pro  Taylor T5Z Pro
 										</a>
 
-										<span class="header-cart-item-info">
-											1 x $17.00
-										</span>
+										<div class="header-cart-item-info">
+											<span class="quantity">1</span>
+											<span>x</span>
+											<span>26.000.000đ</span>
+										</div>
+
+										<button class="remove-item">
+											<i class="fa fa-trash-o" aria-hidden="true"></i>
+										</button>
 									</div>
 								</li>
 							</ul>
 
+							<!-- Tổng giá sản phẩm trên giỏ hàng ở header  -->
 							<div class="header-cart-total">
-								Total: $75.00
+								<p>Tổng giá: <span>45.000.000đ</span></p>
 							</div>
 
+							<!-- header giỏ hàng button xem giỏ hàng và button thanh toán  -->
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
-									<!-- Button -->
+									<!-- Button xem giỏ hàng-->
 									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										View Cart
+										Xem giỏ hàng
 									</a>
 								</div>
 
 								<div class="header-cart-wrapbtn">
-									<!-- Button -->
-									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										Check Out
+									<!-- Button  thanh toán-->
+									<a href="check-out.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Thanh toán
 									</a>
 								</div>
 							</div>
@@ -297,6 +484,7 @@
 					</div>
 				</div>
 
+				<!-- button menu mobile 3 gạch  -->
 				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
 					<span class="hamburger-box">
 						<span class="hamburger-inner"></span>
@@ -305,658 +493,1042 @@
 			</div>
 		</div>
 
-		<!-- Menu Mobile -->
+		<!-- Menu Mobile xổ xuống -->
 		<div class="wrap-side-menu" >
 			<nav class="side-menu">
 				<ul class="main-menu">
+				<!-- khung search màn hình mobile, tablet dưới 992px -->
+					<li>
+						<form action="" id="search-mobile">
+							<input type="text" id="frame-search-mobile" name='q' placeholder="Tìm kiếm">
+							<button type="submit"  id="btn-search-mobile">
+								<i class="fa fa-search" aria-hidden="true"></i> 
+							</button>
+						</form>
+					</li>
 					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
 						<span class="topbar-child1">
-							Free shipping for standard order over $100
+							<span class="support">Hỗ trợ 24/7</span>
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span class="phone-number">0123.456.789</span>
 						</span>
 					</li>
 
 					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
 						<div class="topbar-child2-mobile">
-							<span class="topbar-email">
-								fashe@example.com
-							</span>
+								<!-- đăng nhập -->
+								<div class="login">
+									<a href="login.html">
+										<i class="fa fa-sign-in" aria-hidden="true"></i>
+										Đăng nhập
+									</a>
+								</div>
 
-							<div class="topbar-language rs1-select2">
-								<select class="selection-1" name="time">
-									<option>USD</option>
-									<option>EUR</option>
-								</select>
-							</div>
+								<!-- đăng ký -->
+								<div class="register">
+									<a href="register.html">
+										<i class="fa fa-user-plus" aria-hidden="true"></i>
+										Đăng ký
+									</a>
+								</div>
+
+								<!-- đã đăng nhập  -->
+								<div class="already-logged">
+									<a href="my-account.html">
+										<img src="images/icons/icon-header-01.png" alt="">
+										<span>Quốc</span>
+									</a>
+								</div>
+
+								<!-- đăng xuất -->
+								<div class="log-out">
+									<a href="index.html">
+										<i class="fa fa-sign-out" aria-hidden="true"></i>
+										Đăng xuất
+									</a>
+								</div>
 						</div>
 					</li>
-
+					
+					<!-- mạng xã hội của shop -->
 					<li class="item-topbar-mobile p-l-10">
 						<div class="topbar-social-mobile">
-							<a href="#" class="topbar-social-item fa fa-facebook"></a>
-							<a href="#" class="topbar-social-item fa fa-instagram"></a>
-							<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-							<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-							<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+							<a href="">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							</a>
+							<a href="">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+							<a href="">
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</a>
 						</div>
 					</li>
 
+					<!-- Trang chủ  mobile-->
 					<li class="item-menu-mobile">
-						<a href="index.html">Home</a>
+						<a href="index.html">Trang chủ</a>
+						<!-- <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i> -->
+					</li>
+
+					<!-- guitar mobile -->
+					<li class="item-menu-mobile">
+						<a href="product.html">Guitar</a>
 						<ul class="sub-menu">
-							<li><a href="index.html">Homepage V1</a></li>
-							<li><a href="home-02.html">Homepage V2</a></li>
-							<li><a href="home-03.html">Homepage V3</a></li>
+							<!-- guitar acoustic  -->
+							<li>
+								<a href="">
+									Guitar acoustic
+									
+								</a>
+								<ul class="sub-menu">
+									<li><a href="">Taylor</a></li>
+									<li><a href="">Fender</a></li>
+									<li><a href="">Takamine</a></li>
+									<li><a href="">Kapok</a></li>
+									<li><a href="">Suzuki</a></li>
+									<li><a href="">TangleWood</a></li>
+									<li><a href="">Sigma</a></li>
+									<li><a href="">Martin</a></li>
+									<li><a href="">Epiphone</a></li>
+									<li><a href="">Yamaha</a></li>
+									<li><a href="">Greg bennett</a></li>
+								</ul>
+								<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+							<!-- guitar classic -->
+							<li>
+								<a href="">
+									Guitar classic
+								</a>
+								<ul class="sub-menu">
+									<li><a href="">Taylor</a></li>
+									<li><a href="">Fender</a></li>
+									<li><a href="">Takamine</a></li>
+									<li><a href="">Kapok</a></li>
+									<li><a href="">Suzuki</a></li>
+									<li><a href="">Cordoba</a></li>
+									<li><a href="">Epiphone</a></li>
+									<li><a href="">Yamaha</a></li>
+									<li><a href="">Ortega</a></li>
+									<li><a href="">Greg bennett</a></li>
+								</ul>
+								<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+							<!-- guitar electric  -->
+							<li>
+								<a href="">
+									Guitar electric
+								</a>
+								<ul class="sub-menu">
+									<li><a href="">Jackson</a></li>
+									<li><a href="">Taylor điện</a></li>
+									<li><a href="">Fender</a></li>
+									<li><a href="">Squier</a></li>
+									<li><a href="">Charvel</a></li>
+									<li><a href="">EVH</a></li>
+									<li><a href="">Epiphone</a></li>
+									<li><a href="">Yamaha</a></li>
+								</ul>
+								<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+							<!-- guitar bass -->
+							<li>
+								<a href="">
+									Guitar bass
+								</a>
+								<ul class="sub-menu">
+									<li><a href="">Jackson</a></li>
+									<li><a href="">Fender</a></li>
+									<li><a href="">Squier</a></li>
+								</ul>
+								<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+							</li>
 						</ul>
 						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="product.html">Shop</a>
+						<a href="product.html">Ukulele</a>
+						<ul class="sub-menu">
+							<li><a href="">Fender</a></li>
+							<li><a href="">Diviser</a></li>
+							<li><a href="">Lazer</a></li>
+							<li><a href="">Suzuki</a></li>
+							<li><a href="">Soprano</a></li>
+							<li><a href="">TangleWood</a></li>
+							<li><a href="">Concert</a></li>
+						</ul>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="product.html">Sale</a>
+						<a href="cart.html">Phụ kiện</a>
+						<ul class="sub-menu">
+							<li><a href="">Pick gãy đàn</a></li>
+							<li><a href="">Dây đàn</a></li>
+							<li><a href="">Capo</a></li>
+							<li><a href="">Khoá đàn</a></li>
+							<li><a href="">Bao đàn</a></li>
+						</ul>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="cart.html">Features</a>
+						<a href="blog.html">Tin tức</a>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="blog.html">Blog</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="about.html">About</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="contact.html">Contact</a>
+						<a href="contact.html">Liên hệ</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+	<!-- kết thúc phần header  -->
 
-	<!-- Title Page -->
-	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
-		<h2 class="l-text2 t-center">
-			Women
-		</h2>
-		<p class="m-text13 t-center">
-			New Arrivals Women Collection 2018
-		</p>
-	</section>
+	<!-- breadcrumb: đường dẫn page -->
+	<div class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
+		<a href="index.html" class="s-text16">
+			Trang chủ
+			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
+		</a>
+
+		<a href="product.html" class="s-text16">
+			Danh sách sản phẩm
+		</a>
+	</div>
 
 
-	<!-- Content page -->
+	<!-- Content danh sách sản phẩm -->
 	<section class="bgwhite p-t-55 p-b-65">
 		<div class="container">
 			<div class="row">
+				<!-- sidebar bên trái  -->
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
 					<div class="leftbar p-r-20 p-r-0-sm">
-						<!--  -->
+						<!-- title danh mục sản phẩm -->
 						<h4 class="m-text14 p-b-7">
-							Categories
+							DANH MỤC SẢN PHẨM
 						</h4>
-
-						<ul class="p-b-54">
+						<!-- list sản phẩm -->
+						<ul class="p-b-25">
+							<!-- Tất cả sản phẩm -->
 							<li class="p-t-4">
 								<a href="#" class="s-text13 active1">
-									All
+									Tất cả
 								</a>
 							</li>
-
+							<!-- Guitar  -->
 							<li class="p-t-4">
 								<a href="#" class="s-text13">
-									Women
+									GUITAR
+								</a>
+								<i class="fa fa-chevron-down btn-chevron-down" aria-hidden="true"></i>
+								<!-- list loại guitar  -->
+								<ul class="p-l-15">
+									<!-- Guitar acoustic  -->
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Guitar Acoustic
+										</a>
+										<i class="fa fa-chevron-down btn-chevron-down" aria-hidden="true"></i>
+										<ul class="p-l-15">
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Taylor
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Fender
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Takamine
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Kapok
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Suzuki
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													TangleWood
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Sigma
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Martin
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Epiphone
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Yamaha
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Greg Bennett
+												</a>
+											</li>
+										</ul>
+										
+									</li>
+									<!-- Guitar classic  -->
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Guitar Classic
+										</a>
+										<i class="fa fa-chevron-down btn-chevron-down" aria-hidden="true"></i>
+										<ul class="p-l-15">
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Taylor
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Fender
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Takamine
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Kapok
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Cordoba
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Epiphone
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Yamaha
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Ortega
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Greg Bennett
+												</a>
+											</li>
+										</ul>
+									</li>
+									<!-- Guitar electric  -->
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Guitar Electric
+										</a>
+										<i class="fa fa-chevron-down btn-chevron-down" aria-hidden="true"></i>
+										<ul class="p-l-15">
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Jackson
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Taylor điện
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Fender
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Squier
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Charvel
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Evh
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Epiphone
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Yamaha
+												</a>
+											</li>
+										</ul>
+									</li>
+									<!-- Guitar bass  -->
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Guitar Bass
+										</a>
+										<i class="fa fa-chevron-down btn-chevron-down" aria-hidden="true"></i>
+										<ul class="p-l-15">
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Jackson
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Fender
+												</a>
+											</li>
+											<li class="p-t-4">
+												<a href="#" class="s-text13">
+													Squier
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								
+							</li>
+							<!-- Ukulele  -->
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									UKULELE
+								</a>
+								<i class="fa fa-chevron-down btn-chevron-down" aria-hidden="true"></i>
+								<!-- list Ukulele  -->
+								<ul class="p-l-15">
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Taylor
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Diviser
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Lazer
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Suzuki
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Soprano
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											TangleWood
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Concert
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- Phụ kiện -->
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									PHỤ KIỆN
+								</a>
+								<i class="fa fa-chevron-down btn-chevron-down" aria-hidden="true"></i>
+								<!-- list loại phụ kiện  -->
+								<ul class="p-l-15">
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Pick gãy đàn
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Dây đàn
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Capo
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Khoá đàn
+										</a>
+									</li>
+									<li class="p-t-4">
+										<a href="#" class="s-text13">
+											Bao đàn
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<!-- Tìm theo mức giá  -->
+						<h4 class="m-text14 p-b-7">
+							MỨC GIÁ
+						</h4>
+						<!-- list mức giá -->
+						<ul class="p-b-25">
+							
+							<li class="p-t-4">
+								<a href="#" class="s-text13 active1">
+									Tất cả
 								</a>
 							</li>
-
+							
 							<li class="p-t-4">
 								<a href="#" class="s-text13">
-									Men
+									Nhỏ hơn 50.000đ
 								</a>
 							</li>
-
 							<li class="p-t-4">
 								<a href="#" class="s-text13">
-									Kids
+									Nhỏ hơn 100.000đ
 								</a>
 							</li>
-
 							<li class="p-t-4">
 								<a href="#" class="s-text13">
-									Accesories
+									Nhỏ hơn 150.000đ
+								</a>
+							</li>
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									Nhỏ hơn 200.000đ
+								</a>
+							</li>
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									Nhỏ hơn 250.000đ
+								</a>
+							</li>
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									Lớn hơn 500.000đ
 								</a>
 							</li>
 						</ul>
 
-						<!--  -->
-						<h4 class="m-text14 p-b-32">
-							Filters
+
+						<!-- Tìm theo xuất xứ từ quốc gia nào  -->
+						<h4 class="m-text14 p-b-7">
+							Xuất xứ
 						</h4>
+						<!-- list theo quốc gia xuất xứ -->
+						<ul class="p-b-25">
+							
+							<li class="p-t-4">
+								<a href="#" class="s-text13 active1">
+									Tất cả
+								</a>
+							</li>
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									Mỹ
+								</a>
+							</li>
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									Trung quốc
+								</a>
+							</li>
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									Mỹ
+								</a>
+							</li>
+							<li class="p-t-4">
+								<a href="#" class="s-text13">
+									Đài loan
+								</a>
+							</li>
+						</ul>
 
-						<div class="filter-price p-t-22 p-b-50 bo3">
-							<div class="m-text15 p-b-17">
-								Price
-							</div>
-
-							<div class="wra-filter-bar">
-								<div id="filter-bar"></div>
-							</div>
-
-							<div class="flex-sb-m flex-w p-t-16">
-								<div class="w-size11">
-									<!-- Button -->
-									<button class="flex-c-m size4 bg7 bo-rad-15 hov1 s-text14 trans-0-4">
-										Filter
-									</button>
-								</div>
-
-								<div class="s-text3 p-t-10 p-b-10">
-									Range: $<span id="value-lower">610</span> - $<span id="value-upper">980</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="filter-color p-t-22 p-b-50 bo3">
-							<div class="m-text15 p-b-12">
-								Color
-							</div>
-
-							<ul class="flex-w">
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter1" type="checkbox" name="color-filter1">
-									<label class="color-filter color-filter1" for="color-filter1"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter2" type="checkbox" name="color-filter2">
-									<label class="color-filter color-filter2" for="color-filter2"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter3" type="checkbox" name="color-filter3">
-									<label class="color-filter color-filter3" for="color-filter3"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter4" type="checkbox" name="color-filter4">
-									<label class="color-filter color-filter4" for="color-filter4"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter5" type="checkbox" name="color-filter5">
-									<label class="color-filter color-filter5" for="color-filter5"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter6" type="checkbox" name="color-filter6">
-									<label class="color-filter color-filter6" for="color-filter6"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter7" type="checkbox" name="color-filter7">
-									<label class="color-filter color-filter7" for="color-filter7"></label>
-								</li>
-							</ul>
-						</div>
-
-						<div class="search-product pos-relative bo4 of-hidden">
-							<input class="s-text7 size6 p-l-23 p-r-50" type="text" name="search-product" placeholder="Search Products...">
-
-							<button class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4">
-								<i class="fs-12 fa fa-search" aria-hidden="true"></i>
-							</button>
-						</div>
 					</div>
 				</div>
 
+				<!-- nội dung hiển thị danh sách sản phẩm bên phải -->
 				<div class="col-sm-6 col-md-8 col-lg-9 p-b-50">
-					<!--  -->
-					<div class="flex-sb-m flex-w p-b-35">
+					
+					<!-- Xếp theo -->
+					<!-- <div class="flex-sb-m flex-w p-b-35">
 						<div class="flex-w">
 							<div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
-								<select class="selection-2" name="sorting">
-									<option>Default Sorting</option>
-									<option>Popularity</option>
-									<option>Price: low to high</option>
-									<option>Price: high to low</option>
+								<select class="selection-2" >
+									<option>Sắp xếp theo</option>
+									<option>Giá tăng dần</option>
+									<option>Giá giảm dần</option>
 								</select>
-							</div>
+							</div> -->
 
-							<div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
-								<select class="selection-2" name="sorting">
-									<option>Price</option>
-									<option>$0.00 - $50.00</option>
-									<option>$50.00 - $100.00</option>
-									<option>$100.00 - $150.00</option>
-									<option>$150.00 - $200.00</option>
-									<option>$200.00+</option>
-
+							<!-- <div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
+								<select class="selection-2" >
+									<option>Giá</option>
+									<option>Nhỏ hơn 50.000đ</option>
+									<option>Nhỏ hơn 100.000đ</option>
+									<option>Nhỏ hơn 150.000đ</option>
+									<option>Nhỏ hơn 200.000đ</option>
+									<option>Lớn hơn 500.000đ</option>
 								</select>
-							</div>
-						</div>
+							</div> -->
+						<!-- </div>
 
 						<span class="s-text8 p-t-5 p-b-5">
-							Showing 1–12 of 16 results
+							Guitar Center
 						</span>
-					</div>
+					</div> -->
 
-					<!-- Product -->
+					<!-- list sản phẩm -->
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<!-- Block2 -->
 							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-02.jpg" alt="IMG-PRODUCT">
 
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
 									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
 											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
 											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
 										</a>
-
+	
 										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
 											</button>
 										</div>
 									</div>
 								</div>
-
+	
 								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
 									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
+										Taylor T5-S1 Red Edgeburst
 									</a>
-
+									<!-- giá sản phẩm mới -->
 									<span class="block2-price m-text6 p-r-5">
-										$75.00
+										28.000.000đ
 									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-03.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$92.50
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-05.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Coach slim easton black
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$165.90
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-									<img src="images/item-07.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Frayed denim shorts
-									</a>
-
+									<!-- giá sản phẩm cũ  -->
 									<span class="block2-oldprice m-text7 p-r-5">
-										$29.50
-									</span>
-
-									<span class="block2-newprice m-text8 p-r-5">
-										$15.90
+										<!-- 32.000.000đ -->
 									</span>
 								</div>
+	
 							</div>
 						</div>
 
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<!-- Block2 -->
 							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-01.jpg" alt="IMG-PRODUCT">
 
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
 									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
 											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
 											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
 										</a>
-
+	
 										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
 											</button>
 										</div>
 									</div>
 								</div>
-
+	
 								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
 									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
+										Taylor T5-S1 Red Edgeburst
 									</a>
-
+									<!-- giá sản phẩm mới -->
 									<span class="block2-price m-text6 p-r-5">
-										$75.00
+										28.000.000đ
 									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-14.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$92.50
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-06.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$75.00
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-08.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$92.50
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-10.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Coach slim easton black
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$165.90
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-									<img src="images/item-11.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Frayed denim shorts
-									</a>
-
+									<!-- giá sản phẩm cũ  -->
 									<span class="block2-oldprice m-text7 p-r-5">
-										$29.50
-									</span>
-
-									<span class="block2-newprice m-text8 p-r-5">
-										$15.90
+										<!-- 32.000.000đ -->
 									</span>
 								</div>
+	
 							</div>
 						</div>
 
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<!-- Block2 -->
 							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-12.jpg" alt="IMG-PRODUCT">
 
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
 									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
 											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
 											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
 										</a>
-
+	
 										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
 											</button>
 										</div>
 									</div>
 								</div>
-
+	
 								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
 									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
+										Taylor T5-S1 Red Edgeburst
 									</a>
-
+									<!-- giá sản phẩm mới -->
 									<span class="block2-price m-text6 p-r-5">
-										$75.00
+										28.000.000đ
+									</span>
+									<!-- giá sản phẩm cũ  -->
+									<span class="block2-oldprice m-text7 p-r-5">
+										<!-- 32.000.000đ -->
 									</span>
 								</div>
+	
 							</div>
 						</div>
 
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<!-- Block2 -->
 							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-15.jpg" alt="IMG-PRODUCT">
 
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
 									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
 											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
 											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
 										</a>
-
+	
 										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
 											</button>
 										</div>
 									</div>
 								</div>
-
+	
 								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
 									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
+										Taylor T5-S1 Red Edgeburst
 									</a>
-
+									<!-- giá sản phẩm mới -->
 									<span class="block2-price m-text6 p-r-5">
-										$92.50
+										28.000.000đ
+									</span>
+									<!-- giá sản phẩm cũ  -->
+									<span class="block2-oldprice m-text7 p-r-5">
+										<!-- 32.000.000đ -->
 									</span>
 								</div>
+	
 							</div>
 						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+							<!-- Block2 -->
+							<div class="block2">
+
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
+									<div class="block2-overlay trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
+											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+										</a>
+	
+										<div class="block2-btn-addcart w-size1 trans-0-4">
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+	
+								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
+									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+										Taylor T5-S1 Red Edgeburst
+									</a>
+									<!-- giá sản phẩm mới -->
+									<span class="block2-price m-text6 p-r-5">
+										28.000.000đ
+									</span>
+									<!-- giá sản phẩm cũ  -->
+									<span class="block2-oldprice m-text7 p-r-5">
+										<!-- 32.000.000đ -->
+									</span>
+								</div>
+	
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+							<!-- Block2 -->
+							<div class="block2">
+
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
+									<div class="block2-overlay trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
+											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+										</a>
+	
+										<div class="block2-btn-addcart w-size1 trans-0-4">
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+	
+								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
+									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+										Taylor T5-S1 Red Edgeburst
+									</a>
+									<!-- giá sản phẩm mới -->
+									<span class="block2-price m-text6 p-r-5">
+										28.000.000đ
+									</span>
+									<!-- giá sản phẩm cũ  -->
+									<span class="block2-oldprice m-text7 p-r-5">
+										<!-- 32.000.000đ -->
+									</span>
+								</div>
+	
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+							<!-- Block2 -->
+							<div class="block2">
+
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
+									<div class="block2-overlay trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
+											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+										</a>
+	
+										<div class="block2-btn-addcart w-size1 trans-0-4">
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+	
+								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
+									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+										Taylor T5-S1 Red Edgeburst
+									</a>
+									<!-- giá sản phẩm mới -->
+									<span class="block2-price m-text6 p-r-5">
+										28.000.000đ
+									</span>
+									<!-- giá sản phẩm cũ  -->
+									<span class="block2-oldprice m-text7 p-r-5">
+										<!-- 32.000.000đ -->
+									</span>
+								</div>
+	
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+							<!-- Block2 -->
+							<div class="block2">
+
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
+									<div class="block2-overlay trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
+											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+										</a>
+	
+										<div class="block2-btn-addcart w-size1 trans-0-4">
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+	
+								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
+									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+										Taylor T5-S1 Red Edgeburst
+									</a>
+									<!-- giá sản phẩm mới -->
+									<span class="block2-price m-text6 p-r-5">
+										28.000.000đ
+									</span>
+									<!-- giá sản phẩm cũ  -->
+									<span class="block2-oldprice m-text7 p-r-5">
+										<!-- 32.000.000đ -->
+									</span>
+								</div>
+	
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+							<!-- Block2 -->
+							<div class="block2">
+
+								<div class="block2-img wrap-pic-w of-hidden pos-relative ">
+									<!-- image sản phẩm  -->
+									<img class="img-hover"src="https://vietthuong.vn/upload/images/product/113.jpg" alt="IMG-PRODUCT">
+									<img src="https://vietthuong.vn//upload/images/TAYLOR/t5%20redbuger.jpg" alt="IMG-PRODUCT">
+	
+									<!-- khối hiển thị sau khi hover  -->
+									<div class="block2-overlay trans-0-4">
+										<a href="#" class="block2-btn-addwishlist hov-pointer .trans-1-0 ">
+											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+										</a>
+	
+										<div class="block2-btn-addcart w-size1 trans-0-4">
+											<!-- Button thêm vào giỏ hàng -->
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 .trans-1-0 ">
+												<i class="fa fa-cart-plus" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+	
+								<div class="block2-txt p-t-20">
+	
+									<!-- tên sản phẩm  -->
+									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+										Taylor T5-S1 Red Edgeburst
+									</a>
+									<!-- giá sản phẩm mới -->
+									<span class="block2-price m-text6 p-r-5">
+										28.000.000đ
+									</span>
+									<!-- giá sản phẩm cũ  -->
+									<span class="block2-oldprice m-text7 p-r-5">
+										<!-- 32.000.000đ -->
+									</span>
+								</div>
+	
+							</div>
+						</div>
+
 					</div>
 
-					<!-- Pagination -->
+					<!-- Phân trang -->
 					<div class="pagination flex-m flex-w p-t-26">
 						<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
 						<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4">4</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4">5</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4">6</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4">7</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4">8</a>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -964,146 +1536,125 @@
 
 	<!-- Footer -->
 	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
-		<div class="flex-w p-b-90">
+
+		<!-- Footer (chân trang)  -->
+		<div class="footer flex-w p-b-90">
 			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
-				<h4 class="s-text12 p-b-30">
-					GET IN TOUCH
-				</h4>
+
+				<!-- logo shop -->
+				<a href="index.html" class="logo s-text12 p-b-30">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</a>
 
 				<div>
 					<p class="s-text7 w-size27">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+						Địa chỉ:
+						<span class="text-cap"> 23/12 - Khu Phố tây B - phường đông hoà - thị xã dĩ an - tỉnh bình dương</span>
+					</p>
+					<p class="s-text7 w-size27">
+						Điện thoại:
+						<span>0123.456.789</span>
+					</p>
+					<p class="s-text7 w-size27">
+						Email:
+						<span>guitarcenter@gmail.com</span>
 					</p>
 
-					<div class="flex-m p-t-30">
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
-					</div>
 				</div>
 			</div>
 
 			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
 				<h4 class="s-text12 p-b-30">
-					Categories
+					GuitarCenter
 				</h4>
 
 				<ul>
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Men
+							Giới thiệu GuitarCenter
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Women
+							Liên hệ / góp ý
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Dresses
+							Điều khoản sử dụng
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Sunglasses
-						</a>
-					</li>
 				</ul>
 			</div>
 
+			<!-- hướng dẫn chung  -->
 			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
 				<h4 class="s-text12 p-b-30">
-					Links
+					Hướng dẫn
 				</h4>
 
 				<ul>
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Search
+							Giao hàng - đổi trả
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							About Us
+							Hướng dẫn mua hàng
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Contact Us
+							Thanh toán và bảo mật
 						</a>
 					</li>
 
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
-							Returns
+							Chính sách bảo hành
 						</a>
 					</li>
 				</ul>
 			</div>
 
-			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+			<!-- đăng ký nhận bản tin  -->
+			<div class="w-size29 p-t-30 p-l-15 p-r-15 respon3">
 				<h4 class="s-text12 p-b-30">
-					Help
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Track Order
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Returns
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Shipping
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
-				<h4 class="s-text12 p-b-30">
-					Newsletter
+					Đăng ký nhận bản tin
 				</h4>
 
 				<form>
 					<div class="effect1 w-size9">
-						<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
+						<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="Email của bạn">
 						<span class="effect1-line"></span>
 					</div>
 
 					<div class="w-size2 p-t-20">
 						<!-- Button -->
 						<button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
-							Subscribe
+							Đăng ký
 						</button>
 					</div>
 
 				</form>
 			</div>
+
+			<!-- fanpage của shop  -->
+			<div class="w-size30 p-t-30 p-l-15 p-r-15 respon3">
+				<div class="fb-page" data-href="https://www.facebook.com/GuitarCenter-102666498062176/"
+				data-tabs="" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GuitarCenter-102666498062176/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GuitarCenter-102666498062176/">GuitarCenter</a></blockquote>
+				</div>
+			</div>
 		</div>
 
-		<div class="t-center p-l-15 p-r-15">
+		<!-- Bản quyền GuitarCenter  -->
+		<div class="copyright t-center p-l-15 p-r-15">
 			<a href="#">
 				<img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
 			</a>
@@ -1125,36 +1676,37 @@
 			</a>
 
 			<div class="t-center s-text8 p-t-20">
-				Copyright © 2018 All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				Copyright © 2020 <a href="index.html" class="guitar-center">GuitarCenter</a>
 			</div>
 		</div>
 	</footer>
 
 
 
-	<!-- Back to top -->
+	<!-- Button trở về đầu trang (back to top) -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn">
 		<span class="symbol-btn-back-to-top">
 			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
 		</span>
 	</div>
 
-	<!-- Container Selection -->
+	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
 	<div id="dropDownSelect2"></div>
 
 
 
-<!--===============================================================================================-->
+	<!-- Thư viện jquery-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+
 	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+	
+	<!-- file js của thư viện bootstrap -->
 	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
+	<!--custom hộp thoại selectbox-->
 	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
 			dropdownParent: $('#dropDownSelect1')
@@ -1164,58 +1716,31 @@
 			minimumResultsForSearch: 20,
 			dropdownParent: $('#dropDownSelect2')
 		});
-	</script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
-	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
+	</script> -->
+	<!-- js của thư viện slick slide, phải để sau thư viện jquery và trước thẻ đóng body-->
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/slick-custom.js"></script>
-<!--===============================================================================================-->
+	<!--js custom hộp thoại sweetalert-->
 	<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
+	<!-- khởi tạo sự kiện khi click thêm vào giỏ hàng hộp thoại sweetalert sẽ hiển thị và thông báo -->
 	<script type="text/javascript">
 		$('.block2-btn-addcart').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to cart !", "success");
+				swal(nameProduct, "đã thêm vào giỏ hàng !", "success");
 			});
 		});
 
 		$('.block2-btn-addwishlist').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
+				swal(nameProduct, "đã thêm vào danh sách yêu thích !", "success");
 			});
 		});
 	</script>
-
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/noui/nouislider.min.js"></script>
-	<script type="text/javascript">
-		/*[ No ui ]
-	    ===========================================================*/
-	    var filterBar = document.getElementById('filter-bar');
-
-	    noUiSlider.create(filterBar, {
-	        start: [ 50, 200 ],
-	        connect: true,
-	        range: {
-	            'min': 50,
-	            'max': 200
-	        }
-	    });
-
-	    var skipValues = [
-	    document.getElementById('value-lower'),
-	    document.getElementById('value-upper')
-	    ];
-
-	    filterBar.noUiSlider.on('update', function( values, handle ) {
-	        skipValues[handle].innerHTML = Math.round(values[handle]) ;
-	    });
-	</script>
-<!--===============================================================================================-->
+	<!--các file xử lý jquery, js-->
 	<script src="js/main.js"></script>
+	<script src="js/additional-jquery.js"></script>
 
 </body>
 </html>

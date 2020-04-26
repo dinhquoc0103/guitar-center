@@ -4,36 +4,30 @@
 	<title>Đăng nhập - GuitarCenter</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
+	<!-- Thêm icon trên title ở tab trình duyệt -->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
+	<!-- fontawesome 4.7 -->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
-<!--===============================================================================================-->
+	<!-- Tạo hiệu ứng khi phần tử vừa xuất hiện dùng cho nội dung trên slider ngang full chiều dài màn hình -->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
+	<!-- Tạo button menu ba gạch-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
+	<!-- Hiệu ứng khi load, refesh trang  -->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
+	<!-- Tạo hộp thoại select box đẹp hơn-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
+	<!-- slick tạo slider -->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
-<!--===============================================================================================-->
+	<!-- các file css -->
+	<!-- file css định nghĩa sẵn class -->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-<!-- file css bổ sung  -->
-<link rel="stylesheet" type="text/css" href="css/additional-style.css">
-<!-- add font chữ 'Open Sans'  -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/additional-style.css">
+	<!-- add font chữ 'Open Sans'  -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 </head>
 <body class="animsition">
 	<!-- Nhúng fanpage của shop vào web  -->
@@ -735,11 +729,11 @@
 							<input class="sizefull s-text7 p-l-22 p-r-22" type="password" name="phone-number" placeholder="Mật Khẩu">
 						</div>
 
-						<!-- khối button đăng ký và bạn đã có tài khoản?  -->
+						<!-- khối button đăng nhập và bạn đã chưa có tài khoản?  -->
 						<div class="end">
-							<!-- Button đăng ký-->
+							<!-- Button đăng nhập-->
 							<div class="w-size25">
-								<button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
+								<button type="submit" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
 									Đăng Nhập
 								</button>
 							</div>
@@ -859,37 +853,7 @@
 				</ul>
 			</div>
 
-			<!-- <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-				<h4 class="s-text12 p-b-30">
-					Help
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Track Order
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Returns
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Shipping
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div> -->
+			
 
 			<!-- đăng ký nhận bản tin  -->
 			<div class="w-size29 p-t-30 p-l-15 p-r-15 respon3">
@@ -958,37 +922,16 @@
 		</span>
 	</div>
 
-	<!-- Container Selection1 -->
-	<div id="dropDownSelect1"></div>
-	<div id="dropDownSelect2"></div>
-
-
-
-<!--===============================================================================================-->
+	<!-- Thư viện jquery-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+
 	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+	<!-- file js của thư viện bootstrap -->
 	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-	<script type="text/javascript">
-		$(".selection-1").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect1')
-		});
-
-		$(".selection-2").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect2')
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
-	<script src="js/map-custom.js"></script>
-<!--===============================================================================================-->
+	<!--các file xử lý jquery, js-->
 	<script src="js/main.js"></script>
+	<script src="js/additional-jquery.js"></script>
 
 </body>
 </html>

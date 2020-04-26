@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Đăng ký tài khoản - GuitarCenter</title>
+	<title>Đặt hàng thành công - GuitarCenter</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Thêm icon trên title ở tab trình duyệt -->
+    <!-- Thêm icon trên title ở tab trình duyệt -->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<!-- fontawesome 4.7 -->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
-	<!-- Tạo hiệu ứng khi phần tử vừa xuất hiện dùng cho nội dung trên slider ngang full chiều dài màn hình -->
+    <!-- Tạo hiệu ứng khi phần tử vừa xuất hiện dùng cho nội dung trên slider ngang full chiều dài màn hình -->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 	<!-- Tạo button menu ba gạch-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 	<!-- Hiệu ứng khi load, refesh trang  -->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<!-- Tạo hộp thoại select box đẹp hơn-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 	<!-- slick tạo slider -->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
 	<!-- các file css -->
@@ -695,78 +693,82 @@
 			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
 		</a>
 
-		<a href="cart.html" class="s-text16">
-			Đăng ký tài khoản
+		<a href="javascript:void(0)" class="s-text16">
+			Đặt hàng thành công
 			<!-- <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i> -->
 		</a>
 	</div>
 
-	<!-- content đăng ký tài khoản -->
+	<!-- content đặt hàng thành công -->
 	<section class="register-page bgwhite p-t-30 p-b-60">
 		<div class="container">
-			<!-- dùng thiết lập justify-content: center  -->
-			<div class="row">
-				<!-- khối đăng ký tài khoản  -->
-				<div class="col-md-6 p-b-30">
-					<form action="post-du-lieu-den-server-day" class="form-register">
-						<!-- title đăng ký tài khoản  -->
-						<h4 class="m-text26 p-b-30 p-t-15">
-							Đăng ký tài khoản
-						</h4>
-
-						<!-- khung input nhập họ và tên  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name" placeholder="Họ Và Tên">
-						</div>
-
-						<!-- khung input nhập tên đăng nhập  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name-login" placeholder="Tên Đăng Nhập">
-						</div>
-
-						<!-- khung input nhập số điện thoại  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="phone-number" placeholder="Số Điện Thoại">
-						</div>
-
-						<!-- khung input nhập email  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="email" name="email" placeholder="Email">
-						</div>
-
-						<!-- khung input nhập mật khẩu  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="password" name="password" placeholder="Mật Khẩu">
-						</div>
-
-						<!-- khung input xác nhận mật khẩu  -->
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="-confirm-password" name="confirm-password" placeholder="Xác Nhận Mật Khẩu">
-						</div>
-
-						<!-- <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="message" placeholder="Message"></textarea> -->
-
-						<!-- khối button đăng ký và bạn đã có tài khoản?  -->
-						<div class="end">
-							<!-- Button đăng ký-->
-							<div class="w-size25">
-								<button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
-									Đăng Ký
-								</button>
-							</div>
-
-							<!-- đã có tài khoản  -->
-							<div class="already-account">
-								<span>Bạn đã có tài khoản?</span>
-								<a href="login.html">Đăng Nhập</a>
-							</div>
-						</div>
-					</form>
-				</div>
+			<!-- khối info top  -->
+			<div class="info-top m-b-24 t-center">
+                <div class="icon-check-circle m-b-10">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                </div>
+                <h1 class="m-b-10">Cảm ơn bạn đã mua hàng tại GuitarCenter</h1>
+                <p class="m-b-10">Chúng tôi đã gữi thông tin đơn hàng vào email của bạn, hãy kiểm tra email của bạn nhé!</p>
+				<!-- mã đơn hàng - trạng thái  -->
+				<p class="text-order-and-status m-b-10">Đơn hàng: 18000 - Chờ tiếp nhận</p>
+				<!-- ngày đặt -->
+                <p>Ngày đặt hàng: <i>18/04/2020</i></span>
 			</div>
+			
+			<!-- khối info đơn hàng  -->
+            <div class="info-order">
+				<!-- địa chỉ nhận hàng  -->
+                <div class="address m-b-10">
+                    <h3 class="title-info-order m-b-6">Địa chỉ nhận hàng</h3>
+                    <p>23/12 - Khu Phố Tây B - Phường Đông Hoà - Thĩ Xã Dĩ An - Tỉnh Bình Dương</p>
+				</div>
+				<!-- phương thức thanh toán  -->
+                <div class="payment-method m-b-10">
+                    <h3 class="title-info-order m-b-6">Phương thức thanh toán</h3>
+                    <p>Thanh toán khi nhận hàng</p>
+				</div>
+				<!-- chi tiết đơn hàng  -->
+                <div class="order-detail m-b-10">
+                    <h3 class="title-info-order m-b-6">Chi tiết đơn hàng</h3>
+                    <table class="table-order-detail"> 
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Tổng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Taylor ABCDEFGH</th>
+                                <td>28.000.000đ</td>
+                            </tr>
+                            <tr>
+                                <th>Kapok QWERT</th>
+                                <td>6.000.000đ</td>
+                            </tr>
+                            <tr>
+                                <th>Fender 12345678</th>
+                                <td>8.000.000đ</td>
+                            </tr>
+                            <tr>
+                                <th>Cordoba MNBVCX</th>
+                                <td>18.000.000đ</td>
+                            </tr>
+                            <!-- <tr>
+                                <th>Phí vận chuyển</th>
+                                <td>28.000đ</td>
+                            </tr> -->
+                            <tr>
+                                <th>Tổng cộng</th>
+                                <td class="text-red">60.028.000đ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 		</div>
 	</section>
-	<!-- kết thúc khối đăng ký tài khoản  -->
+	<!-- kết thúc khối đặt hàng thành công -->
 
 
 	<!-- Footer -->
@@ -870,37 +872,6 @@
 				</ul>
 			</div>
 
-			<!-- <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-				<h4 class="s-text12 p-b-30">
-					Help
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Track Order
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Returns
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Shipping
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div> -->
 
 			<!-- đăng ký nhận bản tin  -->
 			<div class="w-size29 p-t-30 p-l-15 p-r-15 respon3">
@@ -969,14 +940,17 @@
 		</span>
 	</div>
 
-	<!-- Thư viện jquery-->
+
+
+
+    <!-- Thư viện jquery-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 
 	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
 	<!-- file js của thư viện bootstrap -->
 	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--các file xử lý jquery, js-->
+    <!--các file xử lý jquery, js-->
 	<script src="js/main.js"></script>
 	<script src="js/additional-jquery.js"></script>
 
