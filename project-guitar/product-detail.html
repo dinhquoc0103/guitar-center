@@ -1983,6 +1983,12 @@
 				swal(nameProduct, "đã thêm vào danh sách yêu thích !", "success");
 			});
 		});
+		$('.btn-addcart-product-detail').each(function(){
+			var nameProduct = $('.product-detail-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "Đã thêm vào giỏ hàng !", "success");
+			});
+		});
 	</script>
 	<!--các file xử lý jquery, js-->
 	<script src="js/main.js"></script>

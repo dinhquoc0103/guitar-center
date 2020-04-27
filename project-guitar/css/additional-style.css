@@ -850,9 +850,9 @@ h3.title{
     margin-right: 5px;
     margin-bottom: 10px;
 }
-.block-send-comment-review .block-right input:focus, .form-check-out input:focus {
+/* .block-send-comment-review .block-right input:focus, .form-check-out input:focus {
     background: #E8F0FE;
-}
+} */
 .btn-send-review{
     width: 48%;
 }
